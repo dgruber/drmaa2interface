@@ -37,6 +37,5 @@ func CreateJobInfo() (ji JobInfo) {
 	// WallclockTime is unset with 0
 	ji.CPUTime = UnsetTime
 	ji.State = Unset
-	// TODO Unset for Go Time type...
 	return ji
 }

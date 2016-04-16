@@ -14,6 +14,4 @@ type Extensible interface {
 	// a particular DRMAA2 extensible data type
 	ListExtensions() []string
 	DescribeExtension(string) string
-	SetExtension(string) error
-	GetExtension() string
 }

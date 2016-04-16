@@ -3,6 +3,7 @@ package drmaa2interface
 // Machine represents a compute instance implementing the
 // extension interface.
 type Machine struct {
+	Extensible
 	Extension      `xml:"-" json:"-"`
 	Name           string  `json:"name"`
 	Available      bool    `json:"available"`
