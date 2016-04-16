@@ -20,6 +20,6 @@ Unlike other standards it is a common subset of functions available in all major
 More information can be found at [the DRMAA website](http://www.drmaa.org).
 
 When you have access to a DRMAA2 native library for C you can use the [DRMAA2 Go C API wrapper](https://github.com/dgruber/drmaa2). Long term goals are that this library is made compatible to the
-interface defined here.
+interface defined here (it almost is).
 
 Please feel free to create issues for any improvement.
