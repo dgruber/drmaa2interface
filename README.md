@@ -9,7 +9,7 @@ workflows, containers, pods...).
 
 ## What is DRMAA2?
 
-DRMAA2 is an acronym for Distributed Resource Management Application API version 2 which
+DRMAA2 is an acronym for [Distributed Resource Management Application API version 2](http://www.ogf.org/documents/GFD.194.pdf) which
 is an open and freely usable standard defined by the [Open Grid Forum](http://www.ogf.org).
 
 Unlike other standards it is a common subset of functions available in all major DRMs 
