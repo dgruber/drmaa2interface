@@ -10,11 +10,11 @@ const (
 	ARM
 	ARM64
 	Cell
-	PA_RISC
-	PA_RISC64
+	PARISC
+	PARISC64
 	x86
 	x64
-	IA_64
+	IA64
 	MIPS
 	MIPS64
 	PowerPC

@@ -22,7 +22,7 @@ type Job interface {
 	Reap() error
 }
 
-// Job States
+// JobState represents the state of a job.
 type JobState int
 
 //go:generate stringer -type=JobState

@@ -8,7 +8,7 @@ import (
 type JobInfo struct {
 	Extensible
 	Extension         `xml:"-" json:"-"`
-	Id                string        `json:"id"`
+	ID                string        `json:"id"`
 	ExitStatus        int           `json:"exitStatus"`
 	TerminatingSignal string        `json:"terminationSignal"`
 	Annotation        string        `json:"annotation"`
@@ -30,11 +30,8 @@ type JobInfo struct {
 // with UNSET (needed in order to differentiate if a value is
 // not set or 0).
 func CreateJobInfo() (ji JobInfo) {
-	// strings are unset with ""
 	ji.ExitStatus = UnsetNum
-	// slices are unset with nil
 	ji.Slots = UnsetNum
-	// WallclockTime is unset with 0
 	ji.CPUTime = UnsetTime
 	ji.State = Unset
 	return ji

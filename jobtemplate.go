@@ -23,7 +23,7 @@ type JobTemplate struct {
 	OutputPath        string            `json:"outputPath"`
 	ErrorPath         string            `json:"errorPath"`
 	JoinFiles         bool              `json:"joinFiles"`
-	ReservationId     string            `json:"reservationId"`
+	ReservationID     string            `json:"reservationID"`
 	QueueName         string            `json:"queueName"`
 	MinSlots          int64             `json:"minSlots"`
 	MaxSlots          int64             `json:"maxSlots"`
@@ -37,5 +37,5 @@ type JobTemplate struct {
 	StageInFiles      map[string]string `json:"stageInFiles"`
 	StageOutFiles     map[string]string `json:"stageOutFiles"`
 	ResourceLimits    map[string]string `json:"resourceLimits"`
-	AccountingId      string            `json:"accountingString"`
+	AccountingID      string            `json:"accountingString"`
 }

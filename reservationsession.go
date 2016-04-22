@@ -9,7 +9,7 @@ import (
 type ReservationInfo struct {
 	Extensible
 	Extension            `xml:"-" json:"-"`
-	ReservationId        string    `json:"reservationId"`
+	ReservationID        string    `json:"reservationID"`
 	ReservationName      string    `json:"reservationName"`
 	ReservationStartTime time.Time `json:"reservationStartTime"`
 	ReservationEndTime   time.Time `json:"reservationEndTime"`
@@ -37,7 +37,7 @@ type ReservationTemplate struct {
 	MachineArch       string        `json:"machineArch"`
 }
 
-// Reservationer implements all methods required to be
+// Reservation implements all methods required to be
 // a valid DRMAA2 compatible reservation, created by a
 // ReservationSession.
 type Reservation interface {

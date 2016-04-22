@@ -15,7 +15,7 @@ const (
 	JtStaging
 	JtDeadline
 	JtMaxSlots
-	JtAccountingId
+	JtAccountingID
 	RtStartNow
 	RtDuration
 	RtMachineOS
