@@ -1,6 +1,6 @@
 package drmaa2interface
 
-// SessionManager defines all methods availble from a DRMAA2 compatible
+// SessionManager defines all methods available from a DRMAA2 compatible
 // SessionManager implementation. A SessionManager handles creation,
 // opening, closing, destruction of DRMAA2 sessions. Sessions can be
 // job sessions, monitoring sessions, or optionally reservation sessions.
