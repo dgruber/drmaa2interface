@@ -4,7 +4,7 @@ package drmaa2interface
 // implementing a DRMAA2 compatible monitoring session.
 type MonitoringSession interface {
 	CloseMonitoringSession() error
-	GetAllJobs(ji JobInfo) ([]Job, error)
+	GetAllJobs(filter JobInfo) ([]Job, error)
 	GetAllQueues(names []string) ([]Queue, error)
 	GetAllMachines(names []string) ([]Machine, error)
 	GetAllReservations() ([]Reservation, error)

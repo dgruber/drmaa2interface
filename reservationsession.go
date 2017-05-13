@@ -55,6 +55,6 @@ type ReservationSession interface {
 	GetContact() (string, error)
 	GetSessionName() (string, error)
 	GetReservation(string) (Reservation, error)
-	RequestRestervation(ReservationTemplate) (Reservation, error)
+	RequestReservation(ReservationTemplate) (Reservation, error)
 	GetReservations() ([]Reservation, error)
 }
