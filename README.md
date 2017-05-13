@@ -3,7 +3,7 @@ DRMAA2 compatible native Go interfaces and structs for building DRMAA2 compatibl
 
 ## Why using drmaa2interface?
 
-This repository simplyfies the process to create Go DRMAA2 wrappers for job schedulers,
+This repository simplifies the process to create Go DRMAA2 wrappers for job schedulers,
 process managers, resource management systems etc. (like for starting up OS processes,
 workflows, containers, pods...).
 
@@ -19,7 +19,6 @@ Unlike other standards it is a common subset of functions available in all major
 
 More information can be found at [the DRMAA website](http://www.drmaa.org).
 
-When you have access to a DRMAA2 native library for C you can use the [DRMAA2 Go C API wrapper](https://github.com/dgruber/drmaa2). Long term goals are that this library is made compatible to the
-interface defined here (it almost is).
+When you have access to a DRMAA2 native library for C you can use the [DRMAA2 Go C API wrapper](https://github.com/dgruber/drmaa2). The long term goal is that this library is made compatible to the interface defined here (it almost is).
 
-Please feel free to create issues for any improvement.
+Please feel free to create issues on github.
