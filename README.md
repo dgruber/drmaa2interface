@@ -19,6 +19,10 @@ Unlike other standards it is a common subset of functions available in all major
 
 More information can be found at [the DRMAA website](http://www.drmaa.org).
 
-When you have access to a DRMAA2 native library for C you can use the [DRMAA2 Go C API wrapper](https://github.com/dgruber/drmaa2). The long term goal is that this library is made compatible to the interface defined here (it almost is).
-
 Please feel free to create issues on github.
+
+## Projects
+
+The DRMAA2 interface is used in following projects:
+- [wfl - a simple workflow language for Go](https://github.com/dgruber/wfl)
+- [drmaa2os - An implementation of the DRMAA2 interface for OS processes, container runtimes, and more](https://github.com/dgruber/drmaa2os)
