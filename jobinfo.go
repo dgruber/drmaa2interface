@@ -19,7 +19,7 @@ type JobInfo struct {
 	JobOwner          string        `json:"jobOwner"`
 	Slots             int64         `json:"slots"`
 	QueueName         string        `json:"queueName"`
-	WallclockTime     time.Duration `json:"wallockTime"`
+	WallclockTime     time.Duration `json:"wallclockTime"`
 	CPUTime           int64         `json:"cpuTime"`
 	SubmissionTime    time.Time     `json:"submissionTime"`
 	DispatchTime      time.Time     `json:"dispatchTime"`
