@@ -12,8 +12,8 @@ const (
 	Cell
 	PARISC
 	PARISC64
-	x86
-	x64
+	X86
+	X64
 	IA64
 	MIPS
 	MIPS64
