@@ -7,23 +7,23 @@ import (
 // JobInfo represents the state of a job.
 type JobInfo struct {
 	Extensible
-	Extension         `xml:"-" json:"-"`
-	ID                string        `json:"id"`
-	ExitStatus        int           `json:"exitStatus"`
-	TerminatingSignal string        `json:"terminationSignal"`
-	Annotation        string        `json:"annotation"`
-	State             JobState      `json:"state"`
-	SubState          string        `json:"subState"`
-	AllocatedMachines []string      `json:"allocatedMachines"`
-	SubmissionMachine string        `json:"submissionMachine"`
-	JobOwner          string        `json:"jobOwner"`
-	Slots             int64         `json:"slots"`
-	QueueName         string        `json:"queueName"`
-	WallclockTime     time.Duration `json:"wallclockTime"`
-	CPUTime           int64         `json:"cpuTime"`
-	SubmissionTime    time.Time     `json:"submissionTime"`
-	DispatchTime      time.Time     `json:"dispatchTime"`
-	FinishTime        time.Time     `json:"finishTime"`
+	Extension         `json:"extension,omitempty"`
+	ID                string        `json:"id,omitempty"`
+	ExitStatus        int           `json:"exitStatus,omitempty"`
+	TerminatingSignal string        `json:"terminationSignal,omitempty"`
+	Annotation        string        `json:"annotation,omitempty"`
+	State             JobState      `json:"state,omitempty"`
+	SubState          string        `json:"subState,omitempty"`
+	AllocatedMachines []string      `json:"allocatedMachines,omitempty"`
+	SubmissionMachine string        `json:"submissionMachine,omitempty"`
+	JobOwner          string        `json:"jobOwner,omitempty"`
+	Slots             int64         `json:"slots,omitempty"`
+	QueueName         string        `json:"queueName,omitempty"`
+	WallclockTime     time.Duration `json:"wallclockTime,omitempty"`
+	CPUTime           int64         `json:"cpuTime,omitempty"`
+	SubmissionTime    time.Time     `json:"submissionTime,omitempty"`
+	DispatchTime      time.Time     `json:"dispatchTime,omitempty"`
+	FinishTime        time.Time     `json:"finishTime,omitempty"`
 }
 
 // CreateJobInfo creates a JobInfo object where all values are initialized

@@ -7,8 +7,8 @@ import (
 // Version is a DRMAA2 version type which holds the major version
 // and minor version.
 type Version struct {
-	Major string
-	Minor string
+	Major string `json:"major,omitempty"`
+	Minor string `json:"minor,omitempty"`
 }
 
 func (v Version) String() string {

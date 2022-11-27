@@ -4,7 +4,7 @@ package drmaa2interface
 // which are extensible. The extension is named in the DRMAA2
 // spec as SetIntanceValue / GetInstanceValue.
 type Extension struct {
-	ExtensionList map[string]string // stores the extension requests as string
+	ExtensionList map[string]string `json:"extensionList,omitempty"` // stores the extension requests as string
 }
 
 // Extensible is an interface which defines functions used to

@@ -8,33 +8,33 @@ import (
 // a resource reservation.
 type ReservationInfo struct {
 	Extensible
-	Extension            `xml:"-" json:"-"`
-	ReservationID        string    `json:"reservationID"`
-	ReservationName      string    `json:"reservationName"`
-	ReservationStartTime time.Time `json:"reservationStartTime"`
-	ReservationEndTime   time.Time `json:"reservationEndTime"`
-	ACL                  []string  `json:"acl"`
-	ReservedSlots        int64     `json:"reservedSlots"`
-	ReservedMachines     []string  `json:"reservedMachines"`
+	Extension            `json:"extension,omitempty"`
+	ReservationID        string    `json:"reservationID,omitempty"`
+	ReservationName      string    `json:"reservationName,omitempty"`
+	ReservationStartTime time.Time `json:"reservationStartTime,omitempty"`
+	ReservationEndTime   time.Time `json:"reservationEndTime,omitempty"`
+	ACL                  []string  `json:"acl,omitempty"`
+	ReservedSlots        int64     `json:"reservedSlots,omitempty"`
+	ReservedMachines     []string  `json:"reservedMachines,omitempty"`
 }
 
 // ReservationTemplate contains ressource requests for a
 // resource reservation.
 type ReservationTemplate struct {
 	Extensible
-	Extension         `xml:"-" json:"-"`
-	Name              string        `json:"name"`
-	StartTime         time.Time     `json:"startTime"`
-	EndTime           time.Time     `json:"endTime"`
-	Duration          time.Duration `json:"duration"`
-	MinSlots          int64         `json:"minSlots"`
-	MaxSlots          int64         `json:"maxSlots"`
-	JobCategory       string        `json:"jobCategory"`
-	UsersACL          []string      `json:"userACL"`
-	CandidateMachines []string      `json:"candidateMachines"`
-	MinPhysMemory     int64         `json:"minPhysMemory"`
-	MachineOs         string        `json:"machineOs"`
-	MachineArch       string        `json:"machineArch"`
+	Extension         `json:"extension,omitempty"`
+	Name              string        `json:"name,omitempty"`
+	StartTime         time.Time     `json:"startTime,omitempty"`
+	EndTime           time.Time     `json:"endTime,omitempty"`
+	Duration          time.Duration `json:"duration,omitempty"`
+	MinSlots          int64         `json:"minSlots,omitempty"`
+	MaxSlots          int64         `json:"maxSlots,omitempty"`
+	JobCategory       string        `json:"jobCategory,omitempty"`
+	UsersACL          []string      `json:"userACL,omitempty"`
+	CandidateMachines []string      `json:"candidateMachines,omitempty"`
+	MinPhysMemory     int64         `json:"minPhysMemory,omitempty"`
+	MachineOs         string        `json:"machineOs,omitempty"`
+	MachineArch       string        `json:"machineArch,omitempty"`
 }
 
 // Reservation implements all methods required to be

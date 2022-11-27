@@ -4,18 +4,18 @@ package drmaa2interface
 // extension interface.
 type Machine struct {
 	Extensible
-	Extension      `xml:"-" json:"-"`
-	Name           string  `json:"name"`
-	Available      bool    `json:"available"`
-	Sockets        int64   `json:"sockets"`
-	CoresPerSocket int64   `json:"coresPerSocket"`
-	ThreadsPerCore int64   `json:"threadsPerCore"`
-	Load           float64 `json:"load"`
-	PhysicalMemory int64   `json:"physicalMemory"`
-	VirtualMemory  int64   `json:"virtualMemory"`
-	Architecture   CPU     `json:"architecture"`
-	OSVersion      Version `json:"osVersion"`
-	OS             OS      `json:"os"`
+	Extension      `json:"extension,omitempty"`
+	Name           string  `json:"name,omitempty"`
+	Available      bool    `json:"available,omitempty"`
+	Sockets        int64   `json:"sockets,omitempty"`
+	CoresPerSocket int64   `json:"coresPerSocket,omitempty"`
+	ThreadsPerCore int64   `json:"threadsPerCore,omitempty"`
+	Load           float64 `json:"load,omitempty"`
+	PhysicalMemory int64   `json:"physicalMemory,omitempty"`
+	VirtualMemory  int64   `json:"virtualMemory,omitempty"`
+	Architecture   CPU     `json:"architecture,omitempty"`
+	OSVersion      Version `json:"osVersion,omitempty"`
+	OS             OS      `json:"os,omitempty"`
 }
 
 // OS is the operating system type.
