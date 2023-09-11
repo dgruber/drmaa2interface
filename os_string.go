@@ -14,3 +14,34 @@ func (i OS) String() string {
 	}
 	return _OS_name[_OS_index[i]:_OS_index[i+1]]
 }
+
+func OSFromString(os string) (OS, bool) {
+	switch os {
+	case "OtherOS":
+		return OtherOS, true
+	case "AIX":
+		return AIX, true
+	case "BSD":
+		return BSD, true
+	case "Linux":
+		return Linux, true
+	case "HPUX":
+		return HPUX, true
+	case "IRIX":
+		return IRIX, true
+	case "MacOS":
+		return MacOS, true
+	case "SunOS":
+		return SunOS, true
+	case "TRU64":
+		return TRU64, true
+	case "UnixWare":
+		return UnixWare, true
+	case "Win":
+		return Win, true
+	case "WinNT":
+		return WinNT, true
+	default:
+		return OtherOS, false
+	}
+}

@@ -14,3 +14,30 @@ func (i JobState) String() string {
 	}
 	return _JobState_name[_JobState_index[i]:_JobState_index[i+1]]
 }
+
+func JobStateFromString(state string) (JobState, bool) {
+	switch state {
+	case "Unset":
+		return Unset, true
+	case "Undetermined":
+		return Undetermined, true
+	case "Queued":
+		return Queued, true
+	case "QueuedHeld":
+		return QueuedHeld, true
+	case "Running":
+		return Running, true
+	case "Suspended":
+		return Suspended, true
+	case "Requeued":
+		return Requeued, true
+	case "RequeuedHeld":
+		return RequeuedHeld, true
+	case "Done":
+		return Done, true
+	case "Failed":
+		return Failed, true
+	default:
+		return Unset, false
+	}
+}

@@ -14,3 +14,42 @@ func (i CPU) String() string {
 	}
 	return _CPU_name[_CPU_index[i]:_CPU_index[i+1]]
 }
+
+func CPUFromString(cpu string) (CPU, bool) {
+	switch cpu {
+	case "OtherCPU":
+		return OtherCPU, true
+	case "Alpha":
+		return Alpha, true
+	case "ARM":
+		return ARM, true
+	case "ARM64":
+		return ARM64, true
+	case "Cell":
+		return Cell, true
+	case "PARISC":
+		return PARISC, true
+	case "PARISC64":
+		return PARISC64, true
+	case "x86":
+		return X86, true
+	case "x64":
+		return X64, true
+	case "IA64":
+		return IA64, true
+	case "MIPS":
+		return MIPS, true
+	case "MIPS64":
+		return MIPS64, true
+	case "PowerPC":
+		return PowerPC, true
+	case "PowerPC64":
+		return PowerPC64, true
+	case "SPARC":
+		return SPARC, true
+	case "SPARC64":
+		return SPARC64, true
+	default:
+		return OtherCPU, false
+	}
+}

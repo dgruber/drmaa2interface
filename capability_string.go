@@ -14,3 +14,36 @@ func (i Capability) String() string {
 	}
 	return _Capability_name[_Capability_index[i]:_Capability_index[i+1]]
 }
+
+func CapabilityFromString(cap string) (Capability, bool) {
+	switch cap {
+	case "AdvanceReservation":
+		return AdvanceReservation, true
+	case "ReserveSlots":
+		return ReserveSlots, true
+	case "Callback":
+		return Callback, true
+	case "BulkJobsMaxParallel":
+		return BulkJobsMaxParallel, true
+	case "JtEmail":
+		return JtEmail, true
+	case "JtStaging":
+		return JtStaging, true
+	case "JtDeadline":
+		return JtDeadline, true
+	case "JtMaxSlots":
+		return JtMaxSlots, true
+	case "JtAccountingID":
+		return JtAccountingID, true
+	case "RtStartNow":
+		return RtStartNow, true
+	case "RtDuration":
+		return RtDuration, true
+	case "RtMachineOS":
+		return RtMachineOS, true
+	case "RtMachineArch":
+		return RtMachineArch, true
+	default:
+		return AdvanceReservation, false
+	}
+}
