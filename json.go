@@ -14,5 +14,5 @@ func (jt *JobTemplate) UnmarshalJSON(data []byte) error {
 
 func (jt *JobTemplate) MarshalJSON() ([]byte, error) {
 	type jtType JobTemplate
-	return json.Marshal(jtType(jt))
+	return json.Marshal(jtType(*jt))
 }
